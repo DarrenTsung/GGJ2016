@@ -1,1 +1,1 @@
-{"_inputSequenceList":[{"_inputSequence":[{"key":17},{"key":18},{"key":18},{"key":18}]},{"_inputSequence":[{"key":16},{"key":15}]},{"_inputSequence":[{"key":16},{"key":15},{"key":15}]}]}
+{"_inputSequenceList":[{"_inputSequence":[{"key":17},{"key":18}]},{"_inputSequence":[{"key":16},{"key":15},{"key":15}]},{"_inputSequence":[{"key":16},{"key":15},{"key":15}]},{"_inputSequence":[{"key":16},{"key":15},{"key":15},{"key":15}]},{"_inputSequence":[{"key":16},{"key":15},{"key":15},{"key":15}]}]}
