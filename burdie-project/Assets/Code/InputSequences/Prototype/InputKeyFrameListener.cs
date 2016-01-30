@@ -16,10 +16,6 @@ public class InputKeyFrameListener : MonoBehaviour {
     // PRAGMA MARK - Internal
     [SerializeField]
     private InputControlType _type;
-    [SerializeField]
-    private Material _onMaterial;
-    [SerializeField]
-    private Material _offMaterial;
 
     private OnOffState _state;
     private OnOffState State {
@@ -30,15 +26,6 @@ public class InputKeyFrameListener : MonoBehaviour {
 
             this._state = value;
             this.OnStateChange.Invoke(this._state);
-
-            Material materialToUse;
-            if (this._state == OnOffState.ON) {
-                materialToUse = this._onMaterial;
-            } else {
-                materialToUse = this._offMaterial;
-            }
-
-            this.GetComponent<MeshRenderer>().sharedMaterial = materialToUse;
         }
     }
 

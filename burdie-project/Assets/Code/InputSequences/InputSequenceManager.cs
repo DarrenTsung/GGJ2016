@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
+using InControl;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -17,6 +18,7 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
     [Header("Outlets - Set these up!")]
     public InputSequencePlayer _sequencePlayer;
     public InputSequenceValidator _sequenceValidator;
+    public InputKeyTutorialListener _tutorialListener;
 
     [MakeButton]
     [OpenableMethod]
@@ -37,6 +39,11 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
         InputSequenceValidator.OnSuccessValidate.AddListener(this.HandleSuccessfulValidation);
         InputSequenceValidator.OnFailureValidate.AddListener(this.HandleFailedValidation);
         InputSequencePlayer.OnStopPlay.AddListener(this.ValidateCurrentInputSequence);
+
+        Toolbox.GetInstance<InputListenerManager>().ListenForType(InputControlType.Command, (InputDevice device) => {
+            this._tutorialListener.Disabled = true;
+            this.ResetAndStartPlayingSequences();
+        });
     }
 
     private void HandleSuccessfulValidation() {

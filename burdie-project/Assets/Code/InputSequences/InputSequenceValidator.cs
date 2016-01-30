@@ -16,6 +16,26 @@ public class InputSequenceValidator : MonoBehaviour {
     public static InputControlTypeEvent OnKeyPressed = new InputControlTypeEvent();
     public static InputKeyFrameEvent OnKeyFrameValidated = new InputKeyFrameEvent();
 
+    public static InputControlType[] AllInputControlTypesPressedThisFrame() {
+        InputControlType[] types = {
+            InputControlType.Action1,
+            InputControlType.Action2,
+            InputControlType.Action3,
+            InputControlType.Action4,
+        };
+
+        List<InputControlType> pressedTypes = new List<InputControlType>();
+        foreach (InputControlType type in types) {
+    		foreach (InputDevice device in InputManager.Devices) {
+    			if (device.GetControl(type).WasPressed) {
+                    pressedTypes.Add(type);
+    			}
+    		}
+        }
+
+        return pressedTypes.ToArray();
+    }
+
     public void SetupWithSequence(InputSequence sequence) {
         this._sequence = sequence;
     }
@@ -74,26 +94,6 @@ public class InputSequenceValidator : MonoBehaviour {
     private void HandleValidationFailure() {
         this._validating = false;
         InputSequenceValidator.OnFailureValidate.Invoke();
-    }
-
-    private InputControlType[] AllInputControlTypesPressedThisFrame() {
-        InputControlType[] types = {
-            InputControlType.Action1,
-            InputControlType.Action2,
-            InputControlType.Action3,
-            InputControlType.Action4,
-        };
-
-        List<InputControlType> pressedTypes = new List<InputControlType>();
-        foreach (InputControlType type in types) {
-    		foreach (InputDevice device in InputManager.Devices) {
-    			if (device.GetControl(type).WasPressed) {
-                    pressedTypes.Add(type);
-    			}
-    		}
-        }
-
-        return pressedTypes.ToArray();
     }
 
 
