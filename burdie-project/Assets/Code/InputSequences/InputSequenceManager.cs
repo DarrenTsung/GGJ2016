@@ -23,12 +23,6 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
         this._sequencePlayer.PlaySequence();
     }
 
-    [MakeButton]
-    public void ValidateCurrentInputSequence() {
-        this._sequenceValidator.SetupWithSequence(this.GetCurrentInputSequence());
-        this._sequenceValidator.StartValidatingSequence();
-    }
-
 
     // PRAGMA MARK - Internal
     [Header("Properties")]
@@ -37,6 +31,26 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
 
     private void Awake() {
         this.DeserializeFromTextAsset();
+        InputSequenceValidator.OnSuccessValidate.AddListener(this.HandleSuccessfulValidation);
+        InputSequencePlayer.OnStopPlay.AddListener(this.ValidateCurrentInputSequence);
+    }
+
+    private void HandleSuccessfulValidation() {
+        this._currentIndex++;
+        if (this._currentIndex >= this.inputSequenceList.GetSequenceCount()) {
+            Debug.LogWarning("Reached end of sequence list!");
+            this._currentIndex--;
+        }
+
+        this.DoAfterDelay(2.5f, () => {
+            this.PlayCurrentInputSequence();
+        });
+    }
+
+    [MakeButton]
+    private void ValidateCurrentInputSequence() {
+        this._sequenceValidator.SetupWithSequence(this.GetCurrentInputSequence());
+        this._sequenceValidator.StartValidatingSequence();
     }
 
     private InputSequence GetCurrentInputSequence() {

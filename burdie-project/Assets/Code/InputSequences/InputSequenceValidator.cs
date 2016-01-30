@@ -6,11 +6,14 @@ using UnityEngine;
 using UnityEngine.Events;
 using InControl;
 
+public class InputControlTypeEvent : UnityEvent<InputControlType> { }
+
 public class InputSequenceValidator : MonoBehaviour {
     // PRAGMA MARK - Public Interface
     public static UnityEvent OnStartValidate = new UnityEvent();
     public static UnityEvent OnSuccessValidate = new UnityEvent();
     public static UnityEvent OnFailureValidate = new UnityEvent();
+    public static InputControlTypeEvent OnKeyPressed = new InputControlTypeEvent();
     public static InputKeyFrameEvent OnKeyFrameValidated = new InputKeyFrameEvent();
 
     public void SetupWithSequence(InputSequence sequence) {
@@ -18,10 +21,19 @@ public class InputSequenceValidator : MonoBehaviour {
     }
 
     public void StartValidatingSequence() {
-        Debug.Log("Start Validating Sequence!");
+        if (!this.HasSequence()) {
+            Debug.LogWarning("StartValidatingSequence: called when we don't have a sequence!");
+            return;
+        }
+
+        Debug.Log("START VALIDATING Sequence!");
         this._currentSequenceIndex = 0;
         this._validating = true;
         this._validControlType = this._sequence.GetKeyFrameForIndex(this._currentSequenceIndex).key;
+    }
+
+    public bool HasSequence() {
+        return this._sequence != null;
     }
 
 
@@ -30,6 +42,7 @@ public class InputSequenceValidator : MonoBehaviour {
         if (this._validating) {
             InputControlType[] typesPressed = this.AllInputControlTypesPressedThisFrame();
             if (typesPressed.Length > 0) {
+                InputSequenceValidator.OnKeyPressed.Invoke(typesPressed[0]);
                 // if the valid control type was found, then we succeed
                 if (Array.Exists(typesPressed, t => t == this._validControlType)) {
                     this.HandleSuccessfulInput();
@@ -56,13 +69,13 @@ public class InputSequenceValidator : MonoBehaviour {
     }
 
     private void HandleValidationSuccess() {
-        Debug.Log("Success!");
+        Debug.Log("SUCCESS!");
         this._validating = false;
         InputSequenceValidator.OnSuccessValidate.Invoke();
     }
 
     private void HandleValidationFailure() {
-        Debug.Log("Failure!");
+        Debug.Log("FAILURE!");
         this._validating = false;
         InputSequenceValidator.OnFailureValidate.Invoke();
     }

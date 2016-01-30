@@ -1,3 +1,4 @@
+using DT;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +10,10 @@ public class InputKeyFrameEvent : UnityEvent<InputKeyFrame> { }
 
 [Serializable]
 public class InputKeyFrame {
+    // HACK (darren): prevent these from showing up in the editor
+    [ReadOnly]
     public InputControlType key;
+    [ReadOnly]
     public float playingSequenceDelay;
 }
 
@@ -32,6 +36,10 @@ public class InputSequence {
 public class InputSequenceList {
     public InputSequence GetSequenceForIndex(int index) {
         return this._inputSequenceList[index];
+    }
+
+    public int GetSequenceCount() {
+        return this._inputSequenceList.Count;
     }
 
     [SerializeField]
