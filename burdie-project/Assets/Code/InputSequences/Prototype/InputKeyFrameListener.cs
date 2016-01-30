@@ -61,6 +61,8 @@ public class InputKeyFrameListener : MonoBehaviour {
             return;
         }
 
+        this.StopAllCoroutines();
+
         this.State = OnOffState.ON;
 
         this.DoAfterDelay(GameConstants.Instance.kVisualizerTurnOnTime, () => {
