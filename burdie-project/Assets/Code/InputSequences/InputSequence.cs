@@ -13,8 +13,6 @@ public class InputKeyFrame {
     // HACK (darren): prevent these from showing up in the editor
     [ReadOnly]
     public InputControlType key;
-    [ReadOnly]
-    public float playingSequenceDelay;
 }
 
 [Serializable]
