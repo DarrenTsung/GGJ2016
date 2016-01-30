@@ -1,5 +1,6 @@
 using DT;
 using UnityEngine;
+using UnityEngine.Events;
 using InControl;
 
 public enum OnOffState {
@@ -7,7 +8,11 @@ public enum OnOffState {
     OFF
 }
 
+public class OnOffStateEvent : UnityEvent<OnOffState> {}
+
 public class InputKeyFrameListener : MonoBehaviour {
+    public OnOffStateEvent OnStateChange = new OnOffStateEvent();
+
     // PRAGMA MARK - Internal
     [SerializeField]
     private InputControlType _type;
@@ -16,10 +21,18 @@ public class InputKeyFrameListener : MonoBehaviour {
     [SerializeField]
     private Material _offMaterial;
 
+    private OnOffState _state;
     private OnOffState State {
         set {
+            if (this._state == value) {
+                return;
+            }
+
+            this._state = value;
+            this.OnStateChange.Invoke(this._state);
+
             Material materialToUse;
-            if (value == OnOffState.ON) {
+            if (this._state == OnOffState.ON) {
                 materialToUse = this._onMaterial;
             } else {
                 materialToUse = this._offMaterial;
