@@ -29,7 +29,6 @@ public class InputSequencePlayer : MonoBehaviour {
 
         this._currentSequenceIndex = 0;
         this._playing = true;
-        Debug.Log("START PLAYING Sequence!");
         InputSequencePlayer.OnStartPlay.Invoke();
     }
 
@@ -67,9 +66,9 @@ public class InputSequencePlayer : MonoBehaviour {
     // NOTE (darren): decided that randomization was more fun then just playing same sequences over and over
     private void RandomizeCurrentSequence() {
         Dictionary<InputControlType, int> weightedControlTypeMap = new Dictionary<InputControlType, int> {
-            { InputControlType.Action1, 60 },
+            { InputControlType.Action1, 50 },
             { InputControlType.Action2, 50 },
-            { InputControlType.Action3, 40 },
+            { InputControlType.Action3, 50 },
             { InputControlType.Action4, 50 }
         };
 
@@ -81,15 +80,12 @@ public class InputSequencePlayer : MonoBehaviour {
 
     private void PlayCurrentIndex() {
         InputKeyFrame keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
-        Debug.Log("keyframe.key: " + keyframe.key);
         InputSequencePlayer.OnKeyFramePlayed.Invoke(keyframe);
-        // TODO (darren): consider if this should be random or manually input
-        this._delayUntilNextIndex = Random.Range(1.0f, 3.0f);
+        this._delayUntilNextIndex = Random.Range(GameConstants.Instance.kPlayNextKeyFrameMinDelay, GameConstants.Instance.kPlayNextKeyFrameMaxDelay);
     }
 
     private void StopPlaying() {
         this._playing = false;
-        Debug.Log("STOP PLAYING Sequence!");
         InputSequencePlayer.OnStopPlay.Invoke();
     }
 }

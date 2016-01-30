@@ -265,6 +265,49 @@ MonoBehaviour:
   _type: 18
   _onMaterial: {fileID: 2100000, guid: 2ae6794554c284821adc4b712ec12213, type: 2}
   _offMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!1 &157125637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 157125638}
+  - 114: {fileID: 157125639}
+  m_Layer: 0
+  m_Name: GameConstants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157125638
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157125637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1677750778}
+  m_RootOrder: 0
+--- !u!114 &157125639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157125637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4964daa17bf6a4b04bbb5f2d7a8c0ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kPlayNextSequenceDelay: 2.5
+  kVisualizerTurnOnTime: 0.7
+  kPlayNextKeyFrameMinDelay: 0.7
+  kPlayNextKeyFrameMaxDelay: 3
 --- !u!1 &276179909
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +337,7 @@ Transform:
   - {fileID: 896978970}
   - {fileID: 1330887795}
   m_Father: {fileID: 1677750778}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &276179911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,25 +353,16 @@ MonoBehaviour:
     _inputSequenceList:
     - _inputSequence:
       - key: 17
-        playingSequenceDelay: 0
       - key: 18
-        playingSequenceDelay: 0
       - key: 18
-        playingSequenceDelay: 0
       - key: 18
-        playingSequenceDelay: 0
     - _inputSequence:
       - key: 16
-        playingSequenceDelay: 2
       - key: 15
-        playingSequenceDelay: 3
     - _inputSequence:
       - key: 16
-        playingSequenceDelay: 2
       - key: 15
-        playingSequenceDelay: 3
       - key: 15
-        playingSequenceDelay: 3
   _inputSequenceListSource: {fileID: 4900000, guid: df5307a1127ac4d659a18a63572ed515,
     type: 3}
   _sequencePlayer: {fileID: 896978971}
@@ -803,7 +837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1677750778}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &1629969804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,6 +883,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 157125638}
   - {fileID: 276179910}
   - {fileID: 1629969803}
   - {fileID: 1833424213}
@@ -881,7 +916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1677750778}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &1833424214
 MonoBehaviour:
   m_ObjectHideFlags: 0

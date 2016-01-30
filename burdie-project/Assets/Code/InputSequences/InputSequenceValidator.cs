@@ -26,7 +26,6 @@ public class InputSequenceValidator : MonoBehaviour {
             return;
         }
 
-        Debug.Log("START VALIDATING Sequence!");
         this._currentSequenceIndex = 0;
         this._validating = true;
         this._validControlType = this._sequence.GetKeyFrameForIndex(this._currentSequenceIndex).key;
@@ -56,7 +55,6 @@ public class InputSequenceValidator : MonoBehaviour {
     private void HandleSuccessfulInput() {
         InputKeyFrame successfulKeyFrame = this._sequence.GetKeyFrameForIndex(this._currentSequenceIndex);
         InputSequenceValidator.OnKeyFrameValidated.Invoke(successfulKeyFrame);
-        Debug.Log("Successfully validated: " + successfulKeyFrame.key + "!");
 
         this._currentSequenceIndex++;
         // if we don't have any more keyframes to validate, the player successfully put in the input sequence!
@@ -69,13 +67,11 @@ public class InputSequenceValidator : MonoBehaviour {
     }
 
     private void HandleValidationSuccess() {
-        Debug.Log("SUCCESS!");
         this._validating = false;
         InputSequenceValidator.OnSuccessValidate.Invoke();
     }
 
     private void HandleValidationFailure() {
-        Debug.Log("FAILURE!");
         this._validating = false;
         InputSequenceValidator.OnFailureValidate.Invoke();
     }

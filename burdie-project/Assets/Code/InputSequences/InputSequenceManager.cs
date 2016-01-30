@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
+[OpenableClass]
 [CustomExtensionInspectorAttribute]
 public class InputSequenceManager : Singleton<InputSequenceManager> {
     public InputSequenceList inputSequenceList;
@@ -18,9 +19,11 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
     public InputSequenceValidator _sequenceValidator;
 
     [MakeButton]
-    public void PlayCurrentInputSequence() {
-        this._sequencePlayer.SetupWithSequence(this.GetCurrentInputSequence());
-        this._sequencePlayer.PlaySequence();
+    [OpenableMethod]
+    public void ResetAndStartPlayingSequences() {
+        this.StopAllCoroutines();
+        this._currentIndex = 0;
+        this.PlayCurrentInputSequence();
     }
 
 
@@ -32,6 +35,7 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
     private void Awake() {
         this.DeserializeFromTextAsset();
         InputSequenceValidator.OnSuccessValidate.AddListener(this.HandleSuccessfulValidation);
+        InputSequenceValidator.OnFailureValidate.AddListener(this.HandleFailedValidation);
         InputSequencePlayer.OnStopPlay.AddListener(this.ValidateCurrentInputSequence);
     }
 
@@ -42,7 +46,13 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
             this._currentIndex--;
         }
 
-        this.DoAfterDelay(2.5f, () => {
+        this.DoAfterDelay(GameConstants.Instance.kPlayNextSequenceDelay, () => {
+            this.PlayCurrentInputSequence();
+        });
+    }
+
+    private void HandleFailedValidation() {
+        this.DoAfterDelay(GameConstants.Instance.kPlayNextSequenceDelay, () => {
             this.PlayCurrentInputSequence();
         });
     }
@@ -55,6 +65,15 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
 
     private InputSequence GetCurrentInputSequence() {
         return this.inputSequenceList.GetSequenceForIndex(this._currentIndex);
+    }
+
+    private void PlayCurrentInputSequence() {
+        if (GameManager.Instance.IsGameFinished()) {
+            return;
+        }
+
+        this._sequencePlayer.SetupWithSequence(this.GetCurrentInputSequence());
+        this._sequencePlayer.PlaySequence();
     }
 
 
