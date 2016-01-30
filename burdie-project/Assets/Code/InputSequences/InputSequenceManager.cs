@@ -13,19 +13,34 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
     public InputSequenceList inputSequenceList;
     public TextAsset _inputSequenceListSource;
 
+    [Header("Outlets - Set these up!")]
+    public InputSequencePlayer _sequencePlayer;
+    public InputSequenceValidator _sequenceValidator;
+
     [MakeButton]
-    public void PlaySecondInputSequence() {
-        GameObject child = new GameObject();
-        child.transform.SetParent(this.transform);
-        InputSequencePlayer player = child.AddComponent<InputSequencePlayer>();
-        player.SetupWithSequence(this.inputSequenceList.GetSequenceForIndex(1));
-        player.PlaySequence();
+    public void PlayCurrentInputSequence() {
+        this._sequencePlayer.SetupWithSequence(this.GetCurrentInputSequence());
+        this._sequencePlayer.PlaySequence();
+    }
+
+    [MakeButton]
+    public void ValidateCurrentInputSequence() {
+        this._sequenceValidator.SetupWithSequence(this.GetCurrentInputSequence());
+        this._sequenceValidator.StartValidatingSequence();
     }
 
 
     // PRAGMA MARK - Internal
+    [Header("Properties")]
+    [SerializeField]
+    private int _currentIndex = 0;
+
     private void Awake() {
         this.DeserializeFromTextAsset();
+    }
+
+    private InputSequence GetCurrentInputSequence() {
+        return this.inputSequenceList.GetSequenceForIndex(this._currentIndex);
     }
 
 

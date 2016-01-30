@@ -1,13 +1,13 @@
-using System;
+using DT;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class InputSequencePlayer : MonoBehaviour {
     // PRAGMA MARK - Public Interface
-    public UnityEvent OnStartPlay = new UnityEvent();
-    public UnityEvent OnStopPlay = new UnityEvent();
-    public InputKeyframeEvent OnKeyframePlayed = new InputKeyframeEvent();
+    public static UnityEvent OnStartPlay = new UnityEvent();
+    public static UnityEvent OnStopPlay = new UnityEvent();
+    public static InputKeyFrameEvent OnKeyFramePlayed = new InputKeyFrameEvent();
 
     public void PlaySequence() {
         if (!this.HasSequence()) {
@@ -20,7 +20,8 @@ public class InputSequencePlayer : MonoBehaviour {
 
         this._currentSequenceIndex = 0;
         this._playing = true;
-        this.OnStartPlay.Invoke();
+        Debug.Log("Start Playing Sequence!");
+        InputSequencePlayer.OnStartPlay.Invoke();
     }
 
     public void SetupWithSequence(InputSequence sequence) {
@@ -32,11 +33,11 @@ public class InputSequencePlayer : MonoBehaviour {
     }
 
     // PRAGMA MARK - Internal
-    [SerializeField]
+    [SerializeField, ReadOnly]
     private int _currentSequenceIndex = 0;
-    [SerializeField]
+    [SerializeField, ReadOnly]
     private bool _playing = false;
-    [SerializeField]
+    [SerializeField, ReadOnly]
     private float _delayUntilNextIndex = 0.0f;
 
     private InputSequence _currentSequence;
@@ -55,14 +56,16 @@ public class InputSequencePlayer : MonoBehaviour {
     }
 
     private void PlayCurrentIndex() {
-        InputKeyframe keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
+        InputKeyFrame keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
         Debug.Log("keyframe.key: " + keyframe.key);
-        this.OnKeyframePlayed.Invoke(keyframe);
-        this._delayUntilNextIndex = keyframe.playingSequenceDelay;
+        InputSequencePlayer.OnKeyFramePlayed.Invoke(keyframe);
+        // TODO (darren): consider if this should be random or manually input
+        this._delayUntilNextIndex = Random.Range(2.0f, 5.0f);
     }
 
     private void StopPlaying() {
         this._playing = false;
-        this.OnStopPlay.Invoke();
+        Debug.Log("Stop Playing Sequence!");
+        InputSequencePlayer.OnStopPlay.Invoke();
     }
 }

@@ -5,17 +5,17 @@ using UnityEngine;
 using UnityEngine.Events;
 using InControl;
 
-public class InputKeyframeEvent : UnityEvent<InputKeyframe> { }
+public class InputKeyFrameEvent : UnityEvent<InputKeyFrame> { }
 
 [Serializable]
-public class InputKeyframe {
+public class InputKeyFrame {
     public InputControlType key;
     public float playingSequenceDelay;
 }
 
 [Serializable]
 public class InputSequence {
-    public InputKeyframe GetKeyFrameForIndex(int index) {
+    public InputKeyFrame GetKeyFrameForIndex(int index) {
         return this._inputSequence[index];
     }
 
@@ -25,7 +25,7 @@ public class InputSequence {
 
     // PRAGMA MARK - Internal
     [SerializeField]
-    private List<InputKeyframe> _inputSequence = new List<InputKeyframe>();
+    private List<InputKeyFrame> _inputSequence = new List<InputKeyFrame>();
 }
 
 [Serializable]
