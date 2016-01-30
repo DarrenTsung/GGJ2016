@@ -46,7 +46,7 @@ public class InputSequencePlayer : MonoBehaviour {
             if (this._delayUntilNextIndex <= 0.0f) {
                 this.PlayCurrentIndex();
                 this._currentSequenceIndex++;
-                if (this._currentSequenceIndex > this._currentSequence.GetKeyFrameCount()) {
+                if (this._currentSequenceIndex >= this._currentSequence.GetKeyFrameCount()) {
                     this.StopPlaying();
                 }
             }
@@ -55,7 +55,10 @@ public class InputSequencePlayer : MonoBehaviour {
     }
 
     private void PlayCurrentIndex() {
-        this.OnKeyframePlayed.Invoke(this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex));
+        InputKeyframe keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
+        Debug.Log("keyframe.key: " + keyframe.key);
+        this.OnKeyframePlayed.Invoke(keyframe);
+        this._delayUntilNextIndex = keyframe.playingSequenceDelay;
     }
 
     private void StopPlaying() {

@@ -10,10 +10,26 @@ using UnityEditor;
 
 [CustomExtensionInspectorAttribute]
 public class InputSequenceManager : Singleton<InputSequenceManager> {
-    public InputSequenceList inputSequenceList = new InputSequenceList();
-
+    public InputSequenceList inputSequenceList;
     public TextAsset _inputSequenceListSource;
 
+    [MakeButton]
+    public void PlaySecondInputSequence() {
+        GameObject child = new GameObject();
+        child.transform.SetParent(this.transform);
+        InputSequencePlayer player = child.AddComponent<InputSequencePlayer>();
+        player.SetupWithSequence(this.inputSequenceList.GetSequenceForIndex(1));
+        player.PlaySequence();
+    }
+
+
+    // PRAGMA MARK - Internal
+    private void Awake() {
+        this.DeserializeFromTextAsset();
+    }
+
+
+    // PRAGMA MARK - Serialization
     [MakeButton]
     public void SerializeToTextAsset() {
         if (this._inputSequenceListSource == null) {
