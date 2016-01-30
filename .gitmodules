@@ -1,0 +1,3 @@
+[submodule "burdie-project/Assets/Plugins/DTCoreModule"]
+	path = burdie-project/Assets/Plugins/DTCoreModule
+	url = https://github.com/DarrenTsung/DTCoreModule.git

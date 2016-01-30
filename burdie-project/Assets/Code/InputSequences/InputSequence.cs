@@ -26,3 +26,8 @@ public class InputSequence {
     [SerializeField]
     private List<InputKeyframe> inputSequence = new List<InputKeyframe>();
 }
+
+[Serializable]
+public class InputSequenceList {
+    public List<InputSequence> inputSequenceList = new List<InputSequence>();
+}
