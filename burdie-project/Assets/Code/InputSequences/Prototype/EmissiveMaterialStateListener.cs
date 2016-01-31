@@ -12,21 +12,21 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
         listener.OnStateChange.AddListener(this.HandleStateChange);
 
         this._meshRenderer = this.GetRequiredComponent<MeshRenderer>();
-        this._meshRenderer.sharedMaterials[0].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
-        this._meshRenderer.sharedMaterials[1].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
+        this._meshRenderer.sharedMaterials[0].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.15f));
+        this._meshRenderer.sharedMaterials[1].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.15f));
     }
 
     private void Start() {
-        this._meshRenderer.sharedMaterials[0].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
-        this._meshRenderer.sharedMaterials[1].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
+        this._meshRenderer.sharedMaterials[0].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.15f));
+        this._meshRenderer.sharedMaterials[1].SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.15f));
     }
 
     private void HandleStateChange(OnOffState state) {
         this.StopAllCoroutines();
         if (state == OnOffState.ON) {
-            this.StartCoroutine(this.AnimateEmissiveColor(0.4f, 1.0f, 0.2f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.15f, 0.45f, 0.2f));
         } else {
-            this.StartCoroutine(this.AnimateEmissiveColor(1.0f, 0.4f, 0.2f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.45f, 0.15f, 0.2f));
         }
     }
 
