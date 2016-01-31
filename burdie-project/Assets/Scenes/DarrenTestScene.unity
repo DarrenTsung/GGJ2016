@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kPlayNextSequenceDelay: 2.5
-  kVisualizerTurnOnTime: 0.7
+  kVisualizerTurnOnTime: 1.3
   kPlayNextKeyFrameMinDelay: 0.7
   kPlayNextKeyFrameMaxDelay: 3
 --- !u!1 &1540618642

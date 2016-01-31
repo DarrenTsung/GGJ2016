@@ -12,26 +12,22 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
         listener.OnStateChange.AddListener(this.HandleStateChange);
 
         this._meshRenderer = this.GetRequiredComponent<MeshRenderer>();
+        this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
     }
 
     private void HandleStateChange(OnOffState state) {
         this.StopAllCoroutines();
         if (state == OnOffState.ON) {
-            this._meshRenderer.enabled = true;
-            this.StartCoroutine(this.AnimateEmissiveColor(0.2f, 0.8f, 0.6f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.4f, 1.0f, 0.3f));
         } else {
-            this._meshRenderer.enabled = false;
-            this.StartCoroutine(this.AnimateEmissiveColor(0.8f, 0.2f, 0.6f));
+            this.StartCoroutine(this.AnimateEmissiveColor(1.0f, 0.4f, 0.3f));
         }
     }
 
     private IEnumerator AnimateEmissiveColor(float startAlpha, float endAlpha, float duration) {
 		for (float time = 0.0f; time < duration; time += Time.deltaTime) {
 			float currentAlpha = Easers.Ease(EaseType.QuadOut, startAlpha, endAlpha, time, duration);
-            // this._meshRenderer.sharedMaterial.EnableKeyword ("_EMISSION");
-            // this._meshRenderer.sharedMaterial.SetColor("_EmissionColor", new Color(1.0f, 1.0f, 1.0f, currentAlpha));
-            DynamicGI.SetEmissive(this._meshRenderer, new Color(currentAlpha, currentAlpha, currentAlpha, currentAlpha));
-            Debug.Log("currentAlpha: " + currentAlpha);
+            this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, currentAlpha));
 
 			yield return new WaitForEndOfFrame();
 		}
