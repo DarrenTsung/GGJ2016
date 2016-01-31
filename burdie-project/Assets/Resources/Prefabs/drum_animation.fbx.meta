@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: e8edc95b1ba8a4b198ae6c6c06a315b5
+timeCreated: 1454227844
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: omggg:drum_addskin:drum
+    100004: omggg:drum_addskin:Drummer
+    100006: omggg:drum_addskin:group
+    100008: omggg:drum_addskin:joint1
+    100010: omggg:drum_addskin:joint10
+    100012: omggg:drum_addskin:joint11
+    100014: omggg:drum_addskin:joint12
+    100016: omggg:drum_addskin:joint13
+    100018: omggg:drum_addskin:joint14
+    100020: omggg:drum_addskin:joint2
+    100022: omggg:drum_addskin:joint3
+    100024: omggg:drum_addskin:joint4
+    100026: omggg:drum_addskin:joint5
+    100028: omggg:drum_addskin:joint6
+    100030: omggg:drum_addskin:joint7
+    100032: omggg:drum_addskin:joint8
+    100034: omggg:drum_addskin:joint9
+    100036: omggg:drum_addskin:pasted__pPlane1
+    100038: omggg:drum_addskin:pPlane1
+    400000: //RootNode
+    400002: omggg:drum_addskin:drum
+    400004: omggg:drum_addskin:Drummer
+    400006: omggg:drum_addskin:group
+    400008: omggg:drum_addskin:joint1
+    400010: omggg:drum_addskin:joint10
+    400012: omggg:drum_addskin:joint11
+    400014: omggg:drum_addskin:joint12
+    400016: omggg:drum_addskin:joint13
+    400018: omggg:drum_addskin:joint14
+    400020: omggg:drum_addskin:joint2
+    400022: omggg:drum_addskin:joint3
+    400024: omggg:drum_addskin:joint4
+    400026: omggg:drum_addskin:joint5
+    400028: omggg:drum_addskin:joint6
+    400030: omggg:drum_addskin:joint7
+    400032: omggg:drum_addskin:joint8
+    400034: omggg:drum_addskin:joint9
+    400036: omggg:drum_addskin:pasted__pPlane1
+    400038: omggg:drum_addskin:pPlane1
+    2300000: omggg:drum_addskin:drum
+    2300002: omggg:drum_addskin:pasted__pPlane1
+    2300004: omggg:drum_addskin:pPlane1
+    3300000: omggg:drum_addskin:drum
+    3300002: omggg:drum_addskin:pasted__pPlane1
+    3300004: omggg:drum_addskin:pPlane1
+    4300000: omggg:drum_addskin:Drummer
+    4300002: omggg:drum_addskin:pPlane1
+    4300004: omggg:drum_addskin:pasted__pPlane1
+    4300006: omggg:drum_addskin:drum
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: omggg:drum_addskin:Drummer
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: omggg:drum_addskin:drum
+        weight: 1
+      - path: omggg:drum_addskin:Drummer
+        weight: 1
+      - path: omggg:drum_addskin:group
+        weight: 1
+      - path: omggg:drum_addskin:group/omggg:drum_addskin:pasted__pPlane1
+        weight: 1
+      - path: omggg:drum_addskin:joint1
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint4
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint4/omggg:drum_addskin:joint5
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint4/omggg:drum_addskin:joint5/omggg:drum_addskin:joint6
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint7
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint7/omggg:drum_addskin:joint8
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint7/omggg:drum_addskin:joint8/omggg:drum_addskin:joint9
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint7/omggg:drum_addskin:joint8/omggg:drum_addskin:joint9/omggg:drum_addskin:joint10
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint11
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint11/omggg:drum_addskin:joint12
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint11/omggg:drum_addskin:joint12/omggg:drum_addskin:joint13
+        weight: 1
+      - path: omggg:drum_addskin:joint1/omggg:drum_addskin:joint2/omggg:drum_addskin:joint3/omggg:drum_addskin:joint11/omggg:drum_addskin:joint12/omggg:drum_addskin:joint13/omggg:drum_addskin:joint14
+        weight: 1
+      - path: omggg:drum_addskin:pPlane1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

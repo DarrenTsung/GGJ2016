@@ -8,6 +8,6 @@ public class AppInit : MonoBehaviour {
     }
 
 	void update() {
-		AkSoundEngine.SetState ("Intesity", "highest");
+		
 	}
 }
