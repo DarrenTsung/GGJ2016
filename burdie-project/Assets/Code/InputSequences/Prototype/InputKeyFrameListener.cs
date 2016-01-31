@@ -11,6 +11,7 @@ public enum OnOffState {
 public class OnOffStateEvent : UnityEvent<OnOffState> {}
 
 public class InputKeyFrameListener : MonoBehaviour {
+    public static UnityEvent BecameOffState = new UnityEvent();
     public OnOffStateEvent OnStateChange = new OnOffStateEvent();
 
     // PRAGMA MARK - Internal
@@ -26,13 +27,19 @@ public class InputKeyFrameListener : MonoBehaviour {
 
             this._state = value;
             this.OnStateChange.Invoke(this._state);
+            if (this._state == OnOffState.OFF) {
+                InputKeyFrameListener.BecameOffState.Invoke();
+            }
         }
     }
 
     private void Awake() {
-        this.State = OnOffState.OFF;
         InputSequencePlayer.OnKeyFramePlayed.AddListener(this.HandleKeyFramePlayed);
         InputSequenceValidator.OnKeyPressed.AddListener(this.HandleKeyPressedDuringValidation);
+    }
+
+    private void Start() {
+        this.State = OnOffState.OFF;
     }
 
     private void HandleKeyFramePlayed(InputKeyFrame keyframe) {

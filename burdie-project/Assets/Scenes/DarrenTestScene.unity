@@ -667,6 +667,31 @@ MonoBehaviour:
       - key: 15
       - key: 15
       - key: 15
+      - key: 15
+    - _inputSequence:
+      - key: 16
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+    - _inputSequence:
+      - key: 16
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+    - _inputSequence:
+      - key: 16
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
+      - key: 15
   _inputSequenceListSource: {fileID: 4900000, guid: df5307a1127ac4d659a18a63572ed515,
     type: 3}
   _sequencePlayer: {fileID: 73691617}
@@ -1177,10 +1202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4964daa17bf6a4b04bbb5f2d7a8c0ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kPlayNextSequenceDelay: 2.5
+  kPlayNextSequenceDelay: 3
   kVisualizerTurnOnTime: 1.3
-  kPlayNextKeyFrameMinDelay: 0.7
-  kPlayNextKeyFrameMaxDelay: 3
+  kPlayNextKeyFrameMinDelay: 0.8
+  kPlayNextKeyFrameMaxDelay: 1.2
 --- !u!1 &1565775940
 GameObject:
   m_ObjectHideFlags: 0

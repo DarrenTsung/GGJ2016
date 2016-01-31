@@ -50,6 +50,10 @@ public class InputSequencePlayer : MonoBehaviour {
 
     private InputSequence _currentSequence;
 
+    private void Awake() {
+        InputKeyFrameListener.BecameOffState.AddListener(this.HandleKeyFrameFinishedPlaying);
+    }
+
     private void Update() {
         if (this._playing) {
             if (this._delayUntilNextIndex <= 0.0f) {
@@ -81,6 +85,10 @@ public class InputSequencePlayer : MonoBehaviour {
     private void PlayCurrentIndex() {
         InputKeyFrame keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
         InputSequencePlayer.OnKeyFramePlayed.Invoke(keyframe);
+        this._delayUntilNextIndex = 100000;//Random.Range(GameConstants.Instance.kPlayNextKeyFrameMinDelay, GameConstants.Instance.kPlayNextKeyFrameMaxDelay);
+    }
+
+    private void HandleKeyFrameFinishedPlaying() {
         this._delayUntilNextIndex = Random.Range(GameConstants.Instance.kPlayNextKeyFrameMinDelay, GameConstants.Instance.kPlayNextKeyFrameMaxDelay);
     }
 
