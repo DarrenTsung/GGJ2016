@@ -248,8 +248,6 @@ MonoBehaviour:
       Guid: 6416b1f565948549b6aa301609e7c1f9
   ExpandedItems:
   - /Ritual_Wwise
-  - /Ritual_Wwise/Events
-  - /Ritual_Wwise/Events/Default Work Unit
   - /Ritual_Wwise/States
   - /Ritual_Wwise/States/Default Work Unit
   - /Ritual_Wwise/States/Default Work Unit/Intensity

@@ -86,6 +86,8 @@ public class InputSequencePlayer : MonoBehaviour {
 
     private void StopPlaying() {
         this._playing = false;
-        InputSequencePlayer.OnStopPlay.Invoke();
+        this.DoAfterDelay(2.0f, () => {
+            InputSequencePlayer.OnStopPlay.Invoke();
+        });
     }
 }
