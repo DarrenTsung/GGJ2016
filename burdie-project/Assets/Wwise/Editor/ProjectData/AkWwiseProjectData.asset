@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D1FBE13-88BE-461D-8C39-FEA2A827BE8D}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 431411200
+    m_lastTimePart2: -1999427098
     List:
     - Name: Play_Failure
       Path: Default Work Unit/Play_Failure
@@ -173,8 +173,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8B8C77BB-C167-4379-AD32-CDD428575A3B}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 431411200
+    m_lastTimePart2: -1999427098
     List:
     - Name: Verb
       Path: Default Work Unit/Master Audio Bus/Verb
@@ -191,8 +191,8 @@ MonoBehaviour:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{565CDADB-6909-4A7F-952F-9C5268984BFB}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 471411200
+    m_lastTimePart2: -1999427098
     List:
     - Name: Intensity
       Path: Default Work Unit/Intensity
@@ -227,15 +227,15 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BC5C16CF-E425-44D0-8AB6-7E68FFCC6A5D}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 471411200
+    m_lastTimePart2: -1999427098
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{444E60C2-EB8C-415F-A409-7A6DDE11CFAA}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 471411200
+    m_lastTimePart2: -1999427098
     List:
     - Name: Ritual_Soundbank
       Path: Default Work Unit/Ritual_Soundbank
@@ -246,10 +246,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 216529182
       Guid: 6416b1f565948549b6aa301609e7c1f9
-  ExpandedItems:
-  - /Ritual_Wwise
-  - /Ritual_Wwise/Events
-  - /Ritual_Wwise/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

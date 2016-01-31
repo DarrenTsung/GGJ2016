@@ -6,4 +6,8 @@ public class AppInit : MonoBehaviour {
     private void Start() {
         // AkSoundEngine.PostEvent("Play_Music", null);
     }
+
+	void update() {
+		AkSoundEngine.SetState ("Intesity", "highest");
+	}
 }
