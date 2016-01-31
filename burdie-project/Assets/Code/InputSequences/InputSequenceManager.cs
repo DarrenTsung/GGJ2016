@@ -62,7 +62,7 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
     }
 
     private void HandleFailedValidation() {
-        this.DoAfterDelay(GameConstants.Instance.kPlayNextSequenceDelay, () => {
+        this.DoAfterDelay(GameConstants.Instance.kPlayNextSequenceDelay + 3.0f, () => {
             this.PlayCurrentInputSequence();
         });
     }
