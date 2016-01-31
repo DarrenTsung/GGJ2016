@@ -83,18 +83,18 @@ public class GameManager : Singleton<GameManager> {
         this._numberOfCompletedSequences++;
 
         if (this._numberOfCompletedSequences == 2) {
-            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.4f;
-            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.8f;
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.0f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.0f;
         }
 
         if (this._numberOfCompletedSequences == 4) {
-            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
-            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.6f;
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.0f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.0f;
         }
 
         if (this._numberOfCompletedSequences == 6) {
-            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
-            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.3f;
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.0f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.0f;
         }
     }
 
