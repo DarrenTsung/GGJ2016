@@ -51,6 +51,7 @@ public class GameManager : Singleton<GameManager> {
         }
 
         this.CurrentIntensity = (Intensity)(((int)this.CurrentIntensity) - 1);
+        this.RefreshSoundIntensity();
     }
 
     [MakeButton]
@@ -60,6 +61,22 @@ public class GameManager : Singleton<GameManager> {
         }
 
         this.CurrentIntensity = (Intensity)(((int)this.CurrentIntensity) + 1);
+        this.RefreshSoundIntensity();
+    }
+
+    private void RefreshSoundIntensity() {
+        switch (this.CurrentIntensity) {
+            case Intensity.LOW:
+            default:
+                AkSoundEngine.SetState("Intensity", "Default_Low");
+                break;
+            case Intensity.MEDIUM:
+                AkSoundEngine.SetState("Intensity", "Higher");
+                break;
+            case Intensity.HIGH:
+                AkSoundEngine.SetState("Intensity", "Highest");
+                break;
+        }
     }
 
     private void HandleSuccessfulValidation() {

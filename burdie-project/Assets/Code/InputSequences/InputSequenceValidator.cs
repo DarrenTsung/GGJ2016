@@ -8,6 +8,7 @@ using InControl;
 
 public class InputControlTypeEvent : UnityEvent<InputControlType> { }
 
+[CustomExtensionInspector]
 public class InputSequenceValidator : MonoBehaviour {
     // PRAGMA MARK - Public Interface
     public static UnityEvent OnStartValidate = new UnityEvent();
@@ -87,14 +88,18 @@ public class InputSequenceValidator : MonoBehaviour {
         }
     }
 
+    [MakeButton]
     private void HandleValidationSuccess() {
         this._validating = false;
         InputSequenceValidator.OnSuccessValidate.Invoke();
+        AkSoundEngine.PostEvent("Play_Success", this.gameObject);
     }
 
+    [MakeButton]
     private void HandleValidationFailure() {
         this._validating = false;
         InputSequenceValidator.OnFailureValidate.Invoke();
+        AkSoundEngine.PostEvent("Play_Failure", this.gameObject);
     }
 
 
