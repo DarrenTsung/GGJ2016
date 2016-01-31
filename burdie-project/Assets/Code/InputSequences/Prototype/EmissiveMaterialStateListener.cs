@@ -35,5 +35,6 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
 
 			yield return new WaitForEndOfFrame();
 		}
+        this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, endAlpha));
     }
 }

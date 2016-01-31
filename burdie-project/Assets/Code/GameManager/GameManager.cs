@@ -81,6 +81,21 @@ public class GameManager : Singleton<GameManager> {
 
     private void HandleSuccessfulValidation() {
         this._numberOfCompletedSequences++;
+
+        if (this._numberOfCompletedSequences == 2) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.4f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.8f;
+        }
+
+        if (this._numberOfCompletedSequences == 4) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.6f;
+        }
+
+        if (this._numberOfCompletedSequences == 6) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.3f;
+        }
     }
 
     private void HandleFailedValidation() {
