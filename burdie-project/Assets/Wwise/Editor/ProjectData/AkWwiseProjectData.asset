@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: Profile
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D1FBE13-88BE-461D-8C39-FEA2A827BE8D}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2001827715
+    m_lastTimePart2: -1999427090
     List:
     - Name: Play_Failure
-      Path: Default Work Unit/Play_Failure
+      Path: Default Work Unit\Play_Failure
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -30,7 +30,7 @@ MonoBehaviour:
       Guid: bb3140685067c5459d36c3f10aed3f4f
       maxAttenuation: 0
     - Name: Play_Flute_Note_1
-      Path: Default Work Unit/Play_Flute_Note_1
+      Path: Default Work Unit\Play_Flute_Note_1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -40,7 +40,7 @@ MonoBehaviour:
       Guid: 65346e15c1887040805b91cc8e86778d
       maxAttenuation: 0
     - Name: Play_Flute_Note_2
-      Path: Default Work Unit/Play_Flute_Note_2
+      Path: Default Work Unit\Play_Flute_Note_2
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -50,7 +50,7 @@ MonoBehaviour:
       Guid: 87df8d18ad8e3947ae92732dbf60c7b4
       maxAttenuation: 0
     - Name: Play_Flute_Note_3
-      Path: Default Work Unit/Play_Flute_Note_3
+      Path: Default Work Unit\Play_Flute_Note_3
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -60,7 +60,7 @@ MonoBehaviour:
       Guid: ea0b02f6c8ad034d9035406f4e1cace1
       maxAttenuation: 0
     - Name: Play_Flute_Note_4
-      Path: Default Work Unit/Play_Flute_Note_4
+      Path: Default Work Unit\Play_Flute_Note_4
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -70,7 +70,7 @@ MonoBehaviour:
       Guid: 7558bcb66797ef43ba7dd7b973370df9
       maxAttenuation: 0
     - Name: Play_Music
-      Path: Default Work Unit/Play_Music
+      Path: Default Work Unit\Play_Music
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -80,7 +80,7 @@ MonoBehaviour:
       Guid: 7a3b05d90f7cd64ab7dc0310b49f6c8f
       maxAttenuation: 0
     - Name: Play_Star_1
-      Path: Default Work Unit/Play_Star_1
+      Path: Default Work Unit\Play_Star_1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -90,7 +90,7 @@ MonoBehaviour:
       Guid: 1849fc4ca5545c4392b2bc327a29634e
       maxAttenuation: 0
     - Name: Play_Star_2
-      Path: Default Work Unit/Play_Star_2
+      Path: Default Work Unit\Play_Star_2
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -100,7 +100,7 @@ MonoBehaviour:
       Guid: 900971b3938b044282cc48814ef7d726
       maxAttenuation: 0
     - Name: Play_Star_3
-      Path: Default Work Unit/Play_Star_3
+      Path: Default Work Unit\Play_Star_3
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -110,7 +110,7 @@ MonoBehaviour:
       Guid: 517f3fbb9b52d74182aaab00e5ce6237
       maxAttenuation: 0
     - Name: Play_Star_4
-      Path: Default Work Unit/Play_Star_4
+      Path: Default Work Unit\Play_Star_4
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -120,7 +120,7 @@ MonoBehaviour:
       Guid: e220202ffd59154ba602dc05752ccc2f
       maxAttenuation: 0
     - Name: Play_Success
-      Path: Default Work Unit/Play_Success
+      Path: Default Work Unit\Play_Success
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -130,7 +130,7 @@ MonoBehaviour:
       Guid: 8dde44e83d07514ca9a255fc172c160d
       maxAttenuation: 0
     - Name: Stop_Flute_Note_1
-      Path: Default Work Unit/Stop_Flute_Note_1
+      Path: Default Work Unit\Stop_Flute_Note_1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -140,7 +140,7 @@ MonoBehaviour:
       Guid: 0d2525f6832c5b4c83efa18710c2a752
       maxAttenuation: 0
     - Name: Stop_Flute_Note_2
-      Path: Default Work Unit/Stop_Flute_Note_2
+      Path: Default Work Unit\Stop_Flute_Note_2
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -150,7 +150,7 @@ MonoBehaviour:
       Guid: 83460e8b3bd5bc4d9240230b1ee000a8
       maxAttenuation: 0
     - Name: Stop_Flute_Note_3
-      Path: Default Work Unit/Stop_Flute_Note_3
+      Path: Default Work Unit\Stop_Flute_Note_3
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -160,7 +160,7 @@ MonoBehaviour:
       Guid: 33b84970aa9d954f8ea8e6a827740bad
       maxAttenuation: 0
     - Name: Stop_Flute_Note_4
-      Path: Default Work Unit/Stop_Flute_Note_4
+      Path: Default Work Unit\Stop_Flute_Note_4
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -170,14 +170,14 @@ MonoBehaviour:
       Guid: 6b2592918dcac247a1b32e5f667b82c9
       maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8B8C77BB-C167-4379-AD32-CDD428575A3B}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2002742782
+    m_lastTimePart2: -1999427090
     List:
     - Name: Verb
-      Path: Default Work Unit/Master Audio Bus/Verb
+      Path: Default Work Unit\Master Audio Bus\Verb
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -188,14 +188,14 @@ MonoBehaviour:
       ID: -637703766
       Guid: fb21a9dfebae094798f01a265c6c4ad8
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{565CDADB-6909-4A7F-952F-9C5268984BFB}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2044932478
+    m_lastTimePart2: -1999427090
     List:
     - Name: Intensity
-      Path: Default Work Unit/Intensity
+      Path: Default Work Unit\Intensity
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -224,21 +224,21 @@ MonoBehaviour:
       - bytes: 7e89489e2b1db344b1d74fc801cca22b
       - bytes: 3a842f1bc881c84a85da37d7b965343f
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BC5C16CF-E425-44D0-8AB6-7E68FFCC6A5D}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2044942477
+    m_lastTimePart2: -1999427090
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{444E60C2-EB8C-415F-A409-7A6DDE11CFAA}'
-    m_lastTimePsrt1: 141214976
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2044922478
+    m_lastTimePart2: -1999427090
     List:
     - Name: Ritual_Soundbank
-      Path: Default Work Unit/Ritual_Soundbank
+      Path: Default Work Unit\Ritual_Soundbank
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -248,8 +248,6 @@ MonoBehaviour:
       Guid: 6416b1f565948549b6aa301609e7c1f9
   ExpandedItems:
   - /Ritual_Wwise
-  - /Ritual_Wwise/Events
-  - /Ritual_Wwise/Events/Default Work Unit
   - /Ritual_Wwise/States
   - /Ritual_Wwise/States/Default Work Unit
   - /Ritual_Wwise/States/Default Work Unit/Intensity

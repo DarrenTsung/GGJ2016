@@ -21,11 +21,15 @@
 				<Event Id="3951699421" Name="Play_Flute_Note_3"/>
 				<Event Id="3951699418" Name="Play_Flute_Note_4"/>
 				<Event Id="2932040671" Name="Play_Music"/>
+				<Event Id="2807572219" Name="Play_Silence"/>
 				<Event Id="1194537162" Name="Play_Star_1"/>
 				<Event Id="1194537161" Name="Play_Star_2"/>
 				<Event Id="1194537160" Name="Play_Star_3"/>
 				<Event Id="1194537167" Name="Play_Star_4"/>
 				<Event Id="3943614907" Name="Play_Success"/>
+				<Event Id="3682063134" Name="Set_State_High_Intensity"/>
+				<Event Id="1989052392" Name="Set_State_Low_Intensity"/>
+				<Event Id="516967423" Name="Set_State_Medium_Intensity"/>
 				<Event Id="3673223769" Name="Stop_Flute_Note_1"/>
 				<Event Id="3673223770" Name="Stop_Flute_Note_2"/>
 				<Event Id="3673223771" Name="Stop_Flute_Note_3"/>
@@ -71,10 +75,6 @@
 				<File Id="301958482" Language="SFX">
 					<ShortName>Flute_Note2_1.wav</ShortName>
 					<Path>SFX\Flute_Note2_1_D6CDEFF9.wem</Path>
-				</File>
-				<File Id="307005689" Language="SFX">
-					<ShortName>Fire_01.wav</ShortName>
-					<Path>SFX\Fire_01_EE79F7FB.wem</Path>
 				</File>
 				<File Id="341472401" Language="SFX">
 					<ShortName>Failure_1.wav</ShortName>

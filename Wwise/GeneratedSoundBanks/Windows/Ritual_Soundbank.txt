@@ -1,14 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
+	516967423	Set_State_Medium_Intensity			\Default Work Unit\Set_State_Medium_Intensity	
 	1194537160	Play_Star_3			\Default Work Unit\Play_Star_3	
 	1194537161	Play_Star_2			\Default Work Unit\Play_Star_2	
 	1194537162	Play_Star_1			\Default Work Unit\Play_Star_1	
 	1194537167	Play_Star_4			\Default Work Unit\Play_Star_4	
 	1326474932	Play_Failure			\Default Work Unit\Play_Failure	
+	1989052392	Set_State_Low_Intensity			\Default Work Unit\Set_State_Low_Intensity	
+	2807572219	Play_Silence			\Default Work Unit\Play_Silence	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	3673223769	Stop_Flute_Note_1			\Default Work Unit\Stop_Flute_Note_1	
 	3673223770	Stop_Flute_Note_2			\Default Work Unit\Stop_Flute_Note_2	
 	3673223771	Stop_Flute_Note_3			\Default Work Unit\Stop_Flute_Note_3	
 	3673223772	Stop_Flute_Note_4			\Default Work Unit\Stop_Flute_Note_4	
+	3682063134	Set_State_High_Intensity			\Default Work Unit\Set_State_High_Intensity	
 	3943614907	Play_Success			\Default Work Unit\Play_Success	
 	3951699418	Play_Flute_Note_4			\Default Work Unit\Play_Flute_Note_4	
 	3951699420	Play_Flute_Note_2			\Default Work Unit\Play_Flute_Note_2	
@@ -25,10 +29,8 @@ State	ID	Name	State Group			Notes
 	3503962071	Highest	Intensity			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	71376591	Higher	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		
 	175985959	Highest	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Low		
 	187131977	Highest	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Low_Intensity\Drums_Low_Intensity		
-	232045116	Default_Low	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		
 	347067239	Default_Low	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Mid_Intensity\Drums_Mid_Intensity		
 	523359642	Default_Low	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_High_Intensity\Drums_High_Intensity		
 	576297046	Default_Low	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Mid		
@@ -49,7 +51,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	243572748	Success_4	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Success_4_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_4		117222
 	248209667	Star_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Star_3_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_3		75498
 	301958482	Flute_Note2_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Flute_Note2_1_D6CDEFF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_2\Flute_Note2_1		36504
-	307005689	Fire_High	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Fire_01_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		96593
 	341472401	Failure_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Failure_1_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\Failure_1		108153
 	351464349	Success_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Success_2_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_2		121922
 	382785941	Flute_Note4_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Windows\SFX\Flute_Note4_3_9423174D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_4\Flute_Note4_3		36769
