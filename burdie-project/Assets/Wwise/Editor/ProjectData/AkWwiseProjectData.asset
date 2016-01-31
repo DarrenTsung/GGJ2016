@@ -47,7 +47,8 @@ MonoBehaviour:
     m_lastTimePsrt1: -185518336
     m_lastTimePart2: -1999427158
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /WwiseProject
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
