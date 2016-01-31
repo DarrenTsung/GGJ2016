@@ -32,7 +32,7 @@ public class GameConstants : Singleton<GameConstants> {
 
         this._fluteEventMapping = new Dictionary<InputControlType, string> {
             { InputControlType.Action1, "Play_Flute_Note_1" },
-            { InputControlType.Action2, "Play_Flute_Note_1" },
+            { InputControlType.Action2, "Play_Flute_Note_2" },
             { InputControlType.Action3, "Play_Flute_Note_3" },
             { InputControlType.Action4, "Play_Flute_Note_4" },
         };

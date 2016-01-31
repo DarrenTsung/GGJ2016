@@ -15,12 +15,16 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
         this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
     }
 
+    private void Start() {
+        this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, 0.4f));
+    }
+
     private void HandleStateChange(OnOffState state) {
         this.StopAllCoroutines();
         if (state == OnOffState.ON) {
-            this.StartCoroutine(this.AnimateEmissiveColor(0.4f, 1.0f, 0.3f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.4f, 1.0f, 0.2f));
         } else {
-            this.StartCoroutine(this.AnimateEmissiveColor(1.0f, 0.4f, 0.3f));
+            this.StartCoroutine(this.AnimateEmissiveColor(1.0f, 0.4f, 0.2f));
         }
     }
 
@@ -31,5 +35,6 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
 
 			yield return new WaitForEndOfFrame();
 		}
+        this._meshRenderer.sharedMaterial.SetColor("_Color", new Color(1.0f, 1.0f, 1.0f, endAlpha));
     }
 }

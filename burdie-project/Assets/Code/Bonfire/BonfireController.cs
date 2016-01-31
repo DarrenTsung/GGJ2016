@@ -18,23 +18,30 @@ public class BonfireController : MonoBehaviour {
     }
 
     private void HandleIntensityChange(Intensity newIntensity) {
-        this.SetCurrentIntensityBonfireActive(false);
+        if (newIntensity == this._currentIntensity) {
+            this.SetIntensityBonfireActive(this._currentIntensity, true);
+            return;
+        }
+
+        this.SetIntensityBonfireActive(this._currentIntensity, false, 1.5f);
         this._currentIntensity = newIntensity;
-        this.SetCurrentIntensityBonfireActive(true);
+        this.SetIntensityBonfireActive(this._currentIntensity, true);
     }
 
-    private void SetCurrentIntensityBonfireActive(bool active) {
-        switch (this._currentIntensity) {
-            case Intensity.LOW:
-                this._lowIntensityBonfire.SetActive(active);
-                break;
-            case Intensity.MEDIUM:
-                this._mediumIntensityBonfire.SetActive(active);
-                break;
-            case Intensity.HIGH:
-            default:
-                this._highIntensityBonfire.SetActive(active);
-                break;
-        }
+    private void SetIntensityBonfireActive(Intensity intensity, bool active, float delay = 0.0f) {
+        this.DoAfterDelay(delay, () => {
+            switch (intensity) {
+                case Intensity.LOW:
+                    this._lowIntensityBonfire.SetActive(active);
+                    break;
+                case Intensity.MEDIUM:
+                    this._mediumIntensityBonfire.SetActive(active);
+                    break;
+                case Intensity.HIGH:
+                default:
+                    this._highIntensityBonfire.SetActive(active);
+                    break;
+            }
+        });
     }
 }

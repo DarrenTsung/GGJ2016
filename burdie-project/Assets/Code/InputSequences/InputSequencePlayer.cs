@@ -50,6 +50,10 @@ public class InputSequencePlayer : MonoBehaviour {
 
     private InputSequence _currentSequence;
 
+    private void Awake() {
+        InputKeyFrameListener.BecameOffState.AddListener(this.HandleKeyFrameFinishedPlaying);
+    }
+
     private void Update() {
         if (this._playing) {
             if (this._delayUntilNextIndex <= 0.0f) {
@@ -81,11 +85,29 @@ public class InputSequencePlayer : MonoBehaviour {
     private void PlayCurrentIndex() {
         InputKeyFrame keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
         InputSequencePlayer.OnKeyFramePlayed.Invoke(keyframe);
-        this._delayUntilNextIndex = Random.Range(GameConstants.Instance.kPlayNextKeyFrameMinDelay, GameConstants.Instance.kPlayNextKeyFrameMaxDelay);
+        this._delayUntilNextIndex = 100000;
+    }
+
+    private void HandleKeyFrameFinishedPlaying() {
+        float minDelay = GameConstants.Instance.kPlayNextKeyFrameMinDelay;
+
+        if (this._currentSequenceIndex > 0 && this._currentSequenceIndex < this._currentSequence.GetKeyFrameCount()) {
+            InputKeyFrame oldKeyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex - 1);
+            InputKeyFrame keyframe = this._currentSequence.GetKeyFrameForIndex(this._currentSequenceIndex);
+
+            // hack so that if we're changing keys it can play faster
+            if (oldKeyframe.key == keyframe.key) {
+                minDelay = Mathf.Max(minDelay, 0.2f);
+            }
+        }
+
+        this._delayUntilNextIndex = Random.Range(minDelay, GameConstants.Instance.kPlayNextKeyFrameMaxDelay);
     }
 
     private void StopPlaying() {
         this._playing = false;
-        InputSequencePlayer.OnStopPlay.Invoke();
+        this.DoAfterDelay(2.0f, () => {
+            InputSequencePlayer.OnStopPlay.Invoke();
+        });
     }
 }
