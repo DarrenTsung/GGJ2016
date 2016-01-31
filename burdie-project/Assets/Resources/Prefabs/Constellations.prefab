@@ -179,7 +179,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c316131bfa7f20643b763d90493f4778, type: 2}
+  - {fileID: 2100000, guid: 7720dc3de13a5ce419c1e90a5eb4d558, type: 2}
+  - {fileID: 2100000, guid: a5a4a8f340058794d962c7a44ec1e9bb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -205,7 +206,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 758fb7cb847b3024483cb0256b15a88d, type: 2}
+  - {fileID: 2100000, guid: 650b89733af772c4b9a6b291db6787d1, type: 2}
+  - {fileID: 2100000, guid: b6f9146406455374b823afb0e34ddbf3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -231,7 +233,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: f8ff3f981a9d94e45810b79b7a0eb3f8, type: 2}
+  - {fileID: 2100000, guid: 5301feeae03a1c644ac6a5032eb02eb0, type: 2}
+  - {fileID: 2100000, guid: da1ce5408bc092a459b15c3a52a041cb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -257,7 +260,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3c98a3e8da01be84d972f7fa6452ac07, type: 2}
+  - {fileID: 2100000, guid: 306cef7a58ffe6941bde9d169aab112a, type: 2}
+  - {fileID: 2100000, guid: e615438dafe66164aa7d2580bb731edf, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -434,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ee5d9d51404408ba62bcb602ae9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  twinkleFrequency: 1
 --- !u!114 &11452138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ee5d9d51404408ba62bcb602ae9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  twinkleFrequency: 1
 --- !u!114 &11466736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -532,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ee5d9d51404408ba62bcb602ae9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  twinkleFrequency: 1
 --- !u!114 &11477122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ee5d9d51404408ba62bcb602ae9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  twinkleFrequency: 1
 --- !u!114 &11494092
 MonoBehaviour:
   m_ObjectHideFlags: 1

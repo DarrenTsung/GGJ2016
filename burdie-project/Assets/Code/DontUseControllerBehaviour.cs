@@ -15,12 +15,12 @@ public class DontUseControllerBehaviour : MonoBehaviour {
 
     private void HandlePlayerStartPlay() {
         this.StopAllCoroutines();
-        this.StartCoroutine(this.AnimateAlphaColor(0.0f, 0.3f, 0.3f));
+        this.StartCoroutine(this.AnimateAlphaColor(0.0f, 0.1f, 0.3f));
     }
 
     private void HandlePlayerStopPlay() {
         this.StopAllCoroutines();
-        this.StartCoroutine(this.AnimateAlphaColor(0.3f, 0.0f, 0.3f));
+        this.StartCoroutine(this.AnimateAlphaColor(0.1f, 0.0f, 0.3f));
     }
 
     private IEnumerator AnimateAlphaColor(float startAlpha, float endAlpha, float duration) {
