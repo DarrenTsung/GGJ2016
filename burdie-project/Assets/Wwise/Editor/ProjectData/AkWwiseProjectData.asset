@@ -250,6 +250,9 @@ MonoBehaviour:
   - /Ritual_Wwise
   - /Ritual_Wwise/Events
   - /Ritual_Wwise/Events/Default Work Unit
+  - /Ritual_Wwise/States
+  - /Ritual_Wwise/States/Default Work Unit
+  - /Ritual_Wwise/States/Default Work Unit/Intensity
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

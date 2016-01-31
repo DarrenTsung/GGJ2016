@@ -62,6 +62,7 @@ public class InputSequenceValidator : MonoBehaviour {
             InputControlType[] typesPressed = this.AllInputControlTypesPressedThisFrame();
             if (typesPressed.Length > 0) {
                 InputSequenceValidator.OnKeyPressed.Invoke(typesPressed[0]);
+                AkSoundEngine.PostEvent(GameConstants.Instance.EventNameForFluteKey(typesPressed[0]), this.gameObject);
                 // if the valid control type was found, then we succeed
                 if (Array.Exists(typesPressed, t => t == this._validControlType)) {
                     this.HandleSuccessfulInput();

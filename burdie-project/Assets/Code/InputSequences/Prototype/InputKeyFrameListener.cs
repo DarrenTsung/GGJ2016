@@ -51,6 +51,7 @@ public class InputKeyFrameListener : MonoBehaviour {
         this.StopAllCoroutines();
 
         this.State = OnOffState.ON;
+        AkSoundEngine.PostEvent(GameConstants.Instance.EventNameForStarKey(this._type), this.gameObject);
 
         this.DoAfterDelay(GameConstants.Instance.kVisualizerTurnOnTime, () => {
             this.State = OnOffState.OFF;
