@@ -15,40 +15,241 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{702B0C05-6498-4DA7-838E-2817D37E97E6}'
-    m_lastTimePsrt1: -185518336
-    m_lastTimePart2: -1999427158
-    List: []
+    Guid: '{1D1FBE13-88BE-461D-8C39-FEA2A827BE8D}'
+    m_lastTimePsrt1: 141214976
+    m_lastTimePart2: -1999427104
+    List:
+    - Name: Play_Failure
+      Path: Default Work Unit/Play_Failure
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Failure
+        ObjectType: 3
+      ID: 1326474932
+      Guid: bb3140685067c5459d36c3f10aed3f4f
+      maxAttenuation: 0
+    - Name: Play_Flute_Note_1
+      Path: Default Work Unit/Play_Flute_Note_1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Flute_Note_1
+        ObjectType: 3
+      ID: -343267873
+      Guid: 65346e15c1887040805b91cc8e86778d
+      maxAttenuation: 0
+    - Name: Play_Flute_Note_2
+      Path: Default Work Unit/Play_Flute_Note_2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Flute_Note_2
+        ObjectType: 3
+      ID: -343267876
+      Guid: 87df8d18ad8e3947ae92732dbf60c7b4
+      maxAttenuation: 0
+    - Name: Play_Flute_Note_3
+      Path: Default Work Unit/Play_Flute_Note_3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Flute_Note_3
+        ObjectType: 3
+      ID: -343267875
+      Guid: ea0b02f6c8ad034d9035406f4e1cace1
+      maxAttenuation: 0
+    - Name: Play_Flute_Note_4
+      Path: Default Work Unit/Play_Flute_Note_4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Flute_Note_4
+        ObjectType: 3
+      ID: -343267878
+      Guid: 7558bcb66797ef43ba7dd7b973370df9
+      maxAttenuation: 0
+    - Name: Play_Music
+      Path: Default Work Unit/Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      ID: -1362926625
+      Guid: 7a3b05d90f7cd64ab7dc0310b49f6c8f
+      maxAttenuation: 0
+    - Name: Play_Star_1
+      Path: Default Work Unit/Play_Star_1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Star_1
+        ObjectType: 3
+      ID: 1194537162
+      Guid: 1849fc4ca5545c4392b2bc327a29634e
+      maxAttenuation: 0
+    - Name: Play_Star_2
+      Path: Default Work Unit/Play_Star_2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Star_2
+        ObjectType: 3
+      ID: 1194537161
+      Guid: 900971b3938b044282cc48814ef7d726
+      maxAttenuation: 0
+    - Name: Play_Star_3
+      Path: Default Work Unit/Play_Star_3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Star_3
+        ObjectType: 3
+      ID: 1194537160
+      Guid: 517f3fbb9b52d74182aaab00e5ce6237
+      maxAttenuation: 0
+    - Name: Play_Star_4
+      Path: Default Work Unit/Play_Star_4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Star_4
+        ObjectType: 3
+      ID: 1194537167
+      Guid: e220202ffd59154ba602dc05752ccc2f
+      maxAttenuation: 0
+    - Name: Play_Success
+      Path: Default Work Unit/Play_Success
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Success
+        ObjectType: 3
+      ID: -351352389
+      Guid: 8dde44e83d07514ca9a255fc172c160d
+      maxAttenuation: 0
+    - Name: Stop_Flute_Note_1
+      Path: Default Work Unit/Stop_Flute_Note_1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Flute_Note_1
+        ObjectType: 3
+      ID: -621743527
+      Guid: 0d2525f6832c5b4c83efa18710c2a752
+      maxAttenuation: 0
+    - Name: Stop_Flute_Note_2
+      Path: Default Work Unit/Stop_Flute_Note_2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Flute_Note_2
+        ObjectType: 3
+      ID: -621743526
+      Guid: 83460e8b3bd5bc4d9240230b1ee000a8
+      maxAttenuation: 0
+    - Name: Stop_Flute_Note_3
+      Path: Default Work Unit/Stop_Flute_Note_3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Flute_Note_3
+        ObjectType: 3
+      ID: -621743525
+      Guid: 33b84970aa9d954f8ea8e6a827740bad
+      maxAttenuation: 0
+    - Name: Stop_Flute_Note_4
+      Path: Default Work Unit/Stop_Flute_Note_4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Flute_Note_4
+        ObjectType: 3
+      ID: -621743524
+      Guid: 6b2592918dcac247a1b32e5f667b82c9
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{01C0815B-CDDF-4731-A5E2-2292FFEEE77B}'
-    m_lastTimePsrt1: -185518336
-    m_lastTimePart2: -1999427158
-    List: []
+    Guid: '{8B8C77BB-C167-4379-AD32-CDD428575A3B}'
+    m_lastTimePsrt1: 141214976
+    m_lastTimePart2: -1999427104
+    List:
+    - Name: Verb
+      Path: Default Work Unit/Master Audio Bus/Verb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Verb
+        ObjectType: 1
+      ID: -637703766
+      Guid: fb21a9dfebae094798f01a265c6c4ad8
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{1D566BC9-A785-407C-B710-B528743DD582}'
-    m_lastTimePsrt1: -185518336
-    m_lastTimePart2: -1999427158
-    List: []
+    Guid: '{565CDADB-6909-4A7F-952F-9C5268984BFB}'
+    m_lastTimePsrt1: 141214976
+    m_lastTimePart2: -1999427104
+    List:
+    - Name: Intensity
+      Path: Default Work Unit/Intensity
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Intensity
+        ObjectType: 9
+      ID: -1824638732
+      Guid: a122497c447d97448859a51c3012b1cd
+      values:
+      - Default_Low
+      - Higher
+      - Highest
+      - None
+      ValueIcons:
+      - ElementName: Default_Low
+        ObjectType: 8
+      - ElementName: Higher
+        ObjectType: 8
+      - ElementName: Highest
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: eb8e7414b0fb3a11d737dad0db3ba32c
+      ValueGuids:
+      - bytes: e659ba9afda24c4db93711b8eb6efd9b
+      - bytes: 2b5d49941c9b0e4eb43a3b8cf1debf95
+      - bytes: 7e89489e2b1db344b1d74fc801cca22b
+      - bytes: 3a842f1bc881c84a85da37d7b965343f
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{7793FD31-8F80-4FD7-BA8D-CF5358DA82D5}'
-    m_lastTimePsrt1: -185518336
-    m_lastTimePart2: -1999427158
+    Guid: '{BC5C16CF-E425-44D0-8AB6-7E68FFCC6A5D}'
+    m_lastTimePsrt1: 141214976
+    m_lastTimePart2: -1999427104
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{57F9383F-CBA4-4AE3-913D-A6844215E4DA}'
-    m_lastTimePsrt1: -185518336
-    m_lastTimePart2: -1999427158
-    List: []
+    Guid: '{444E60C2-EB8C-415F-A409-7A6DDE11CFAA}'
+    m_lastTimePsrt1: 141214976
+    m_lastTimePart2: -1999427104
+    List:
+    - Name: Ritual_Soundbank
+      Path: Default Work Unit/Ritual_Soundbank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ritual_Soundbank
+        ObjectType: 7
+      ID: 216529182
+      Guid: 6416b1f565948549b6aa301609e7c1f9
   ExpandedItems:
-  - /WwiseProject
+  - /Ritual_Wwise
+  - /Ritual_Wwise/Events
+  - /Ritual_Wwise/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
