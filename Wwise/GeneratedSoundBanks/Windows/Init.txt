@@ -1,0 +1,23 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2470328564	Intensity			\Default Work Unit\Intensity	
+
+State	ID	Name	State Group			Notes
+	289078192	Higher	Intensity			
+	343183083	Default_Low	Intensity			
+	748895195	None	Intensity			
+	3503962071	Highest	Intensity			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4026744401	Flute_Note_4			\Default Work Unit\Master Audio Bus\Flute_Note_4	
+	4026744404	Flute_Note_1			\Default Work Unit\Master Audio Bus\Flute_Note_1	
+	4026744406	Flute_Note_3			\Default Work Unit\Master Audio Bus\Flute_Note_3	
+	4026744407	Flute_Note_2			\Default Work Unit\Master Audio Bus\Flute_Note_2	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3657263530	Verb			\Default Work Unit\Master Audio Bus\Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3216246379	Space_Dreaming	Wwise RoomVerb			
+

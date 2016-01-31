@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\seth\Desktop\Ritual_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\seth\Desktop\Ritual_Wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\seth\Desktop\Ritual_Wwise\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="216529182" Language="SFX">
+			<ShortName>Ritual_Soundbank</ShortName>
+			<Path>Ritual_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1326474932" Name="Play_Failure"/>
+				<Event Id="3951699423" Name="Play_Flute_Note_1"/>
+				<Event Id="3951699420" Name="Play_Flute_Note_2"/>
+				<Event Id="3951699421" Name="Play_Flute_Note_3"/>
+				<Event Id="3951699418" Name="Play_Flute_Note_4"/>
+				<Event Id="2932040671" Name="Play_Music"/>
+				<Event Id="1194537162" Name="Play_Star_1"/>
+				<Event Id="1194537161" Name="Play_Star_2"/>
+				<Event Id="1194537160" Name="Play_Star_3"/>
+				<Event Id="1194537167" Name="Play_Star_4"/>
+				<Event Id="3943614907" Name="Play_Success"/>
+				<Event Id="3673223769" Name="Stop_Flute_Note_1"/>
+				<Event Id="3673223770" Name="Stop_Flute_Note_2"/>
+				<Event Id="3673223771" Name="Stop_Flute_Note_3"/>
+				<Event Id="3673223772" Name="Stop_Flute_Note_4"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="46158326" Language="SFX">
+					<ShortName>Drums_Mid_Intensity.wav</ShortName>
+					<Path>SFX\Drums_Mid_Intensity_EE79F7FB.wem</Path>
+				</File>
+				<File Id="94716580" Language="SFX">
+					<ShortName>Failure_3.wav</ShortName>
+					<Path>SFX\Failure_3_E843A46D.wem</Path>
+				</File>
+				<File Id="115549773" Language="SFX">
+					<ShortName>Flute_Note1_3.wav</ShortName>
+					<Path>SFX\Flute_Note1_3_30D3DEF9.wem</Path>
+				</File>
+				<File Id="130815401" Language="SFX">
+					<ShortName>Flute_Note1_1.wav</ShortName>
+					<Path>SFX\Flute_Note1_1_D0D8522E.wem</Path>
+				</File>
+				<File Id="135249463" Language="SFX">
+					<ShortName>Drone_3.wav</ShortName>
+					<Path>SFX\Drone_3_EE79F7FB.wem</Path>
+				</File>
+				<File Id="151574003" Language="SFX">
+					<ShortName>Flute_Note3_2.wav</ShortName>
+					<Path>SFX\Flute_Note3_2_6FF7DD71.wem</Path>
+				</File>
+				<File Id="165392718" Language="SFX">
+					<ShortName>Flute_Note2_3.wav</ShortName>
+					<Path>SFX\Flute_Note2_3_40B5F3E6.wem</Path>
+				</File>
+				<File Id="243572748" Language="SFX">
+					<ShortName>Success_4.wav</ShortName>
+					<Path>SFX\Success_4_E843A46D.wem</Path>
+				</File>
+				<File Id="248209667" Language="SFX">
+					<ShortName>Star_3.wav</ShortName>
+					<Path>SFX\Star_3_E843A46D.wem</Path>
+				</File>
+				<File Id="301958482" Language="SFX">
+					<ShortName>Flute_Note2_1.wav</ShortName>
+					<Path>SFX\Flute_Note2_1_D6CDEFF9.wem</Path>
+				</File>
+				<File Id="307005689" Language="SFX">
+					<ShortName>Fire_01.wav</ShortName>
+					<Path>SFX\Fire_01_EE79F7FB.wem</Path>
+				</File>
+				<File Id="341472401" Language="SFX">
+					<ShortName>Failure_1.wav</ShortName>
+					<Path>SFX\Failure_1_E843A46D.wem</Path>
+				</File>
+				<File Id="351464349" Language="SFX">
+					<ShortName>Success_2.wav</ShortName>
+					<Path>SFX\Success_2_E843A46D.wem</Path>
+				</File>
+				<File Id="382785941" Language="SFX">
+					<ShortName>Flute_Note4_3.wav</ShortName>
+					<Path>SFX\Flute_Note4_3_9423174D.wem</Path>
+				</File>
+				<File Id="434075218" Language="SFX">
+					<ShortName>Flute_Note4_2.wav</ShortName>
+					<Path>SFX\Flute_Note4_2_C441FA5B.wem</Path>
+				</File>
+				<File Id="452332949" Language="SFX">
+					<ShortName>Drone_1.wav</ShortName>
+					<Path>SFX\Drone_1_EE79F7FB.wem</Path>
+				</File>
+				<File Id="467030876" Language="SFX">
+					<ShortName>Fire_03.wav</ShortName>
+					<Path>SFX\Fire_03_EE79F7FB.wem</Path>
+				</File>
+				<File Id="506631507" Language="SFX">
+					<ShortName>Drone_2.wav</ShortName>
+					<Path>SFX\Drone_2_EE79F7FB.wem</Path>
+				</File>
+				<File Id="539867110" Language="SFX">
+					<ShortName>Success_1.wav</ShortName>
+					<Path>SFX\Success_1_E843A46D.wem</Path>
+				</File>
+				<File Id="569625683" Language="SFX">
+					<ShortName>Flute_Note3_1.wav</ShortName>
+					<Path>SFX\Flute_Note3_1_D3FB9331.wem</Path>
+				</File>
+				<File Id="587291268" Language="SFX">
+					<ShortName>Failure_4.wav</ShortName>
+					<Path>SFX\Failure_4_E843A46D.wem</Path>
+				</File>
+				<File Id="642091844" Language="SFX">
+					<ShortName>Failure_2.wav</ShortName>
+					<Path>SFX\Failure_2_E843A46D.wem</Path>
+				</File>
+				<File Id="645040796" Language="SFX">
+					<ShortName>Flute_Note1_2.wav</ShortName>
+					<Path>SFX\Flute_Note1_2_A29F621E.wem</Path>
+				</File>
+				<File Id="782753784" Language="SFX">
+					<ShortName>Flute_Note2_2.wav</ShortName>
+					<Path>SFX\Flute_Note2_2_CC5ED5C4.wem</Path>
+				</File>
+				<File Id="817522619" Language="SFX">
+					<ShortName>Success_3.wav</ShortName>
+					<Path>SFX\Success_3_E843A46D.wem</Path>
+				</File>
+				<File Id="830805131" Language="SFX">
+					<ShortName>Star_2.wav</ShortName>
+					<Path>SFX\Star_2_E843A46D.wem</Path>
+				</File>
+				<File Id="847706005" Language="SFX">
+					<ShortName>Star_4.wav</ShortName>
+					<Path>SFX\Star_4_E843A46D.wem</Path>
+				</File>
+				<File Id="867287718" Language="SFX">
+					<ShortName>Fire_02.wav</ShortName>
+					<Path>SFX\Fire_02_EE79F7FB.wem</Path>
+				</File>
+				<File Id="885964399" Language="SFX">
+					<ShortName>Flute_Note4_1.wav</ShortName>
+					<Path>SFX\Flute_Note4_1_C83CF79B.wem</Path>
+				</File>
+				<File Id="904440547" Language="SFX">
+					<ShortName>Drums_Low_Intensity.wav</ShortName>
+					<Path>SFX\Drums_Low_Intensity_EE79F7FB.wem</Path>
+				</File>
+				<File Id="910152102" Language="SFX">
+					<ShortName>Drone_4.wav</ShortName>
+					<Path>SFX\Drone_4_EE79F7FB.wem</Path>
+				</File>
+				<File Id="931909280" Language="SFX">
+					<ShortName>Drums_High_Intensity.wav</ShortName>
+					<Path>SFX\Drums_High_Intensity_EE79F7FB.wem</Path>
+				</File>
+				<File Id="972902691" Language="SFX">
+					<ShortName>Flute_Note3_3.wav</ShortName>
+					<Path>SFX\Flute_Note3_3_6C9CEA31.wem</Path>
+				</File>
+				<File Id="1028983836" Language="SFX">
+					<ShortName>Star_1.wav</ShortName>
+					<Path>SFX\Star_1_E843A46D.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

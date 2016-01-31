@@ -1,0 +1,76 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1194537160	Play_Star_3			\Default Work Unit\Play_Star_3	
+	1194537161	Play_Star_2			\Default Work Unit\Play_Star_2	
+	1194537162	Play_Star_1			\Default Work Unit\Play_Star_1	
+	1194537167	Play_Star_4			\Default Work Unit\Play_Star_4	
+	1326474932	Play_Failure			\Default Work Unit\Play_Failure	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3673223769	Stop_Flute_Note_1			\Default Work Unit\Stop_Flute_Note_1	
+	3673223770	Stop_Flute_Note_2			\Default Work Unit\Stop_Flute_Note_2	
+	3673223771	Stop_Flute_Note_3			\Default Work Unit\Stop_Flute_Note_3	
+	3673223772	Stop_Flute_Note_4			\Default Work Unit\Stop_Flute_Note_4	
+	3943614907	Play_Success			\Default Work Unit\Play_Success	
+	3951699418	Play_Flute_Note_4			\Default Work Unit\Play_Flute_Note_4	
+	3951699420	Play_Flute_Note_2			\Default Work Unit\Play_Flute_Note_2	
+	3951699421	Play_Flute_Note_3			\Default Work Unit\Play_Flute_Note_3	
+	3951699423	Play_Flute_Note_1			\Default Work Unit\Play_Flute_Note_1	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2470328564	Intensity			\Default Work Unit\Intensity	
+
+State	ID	Name	State Group			Notes
+	289078192	Higher	Intensity			
+	343183083	Default_Low	Intensity			
+	748895195	None	Intensity			
+	3503962071	Highest	Intensity			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	71376591	Higher	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		
+	175985959	Highest	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Low		
+	187131977	Highest	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Low_Intensity\Drums_Low_Intensity		
+	232045116	Default_Low	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		
+	347067239	Default_Low	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Mid_Intensity\Drums_Mid_Intensity		
+	523359642	Default_Low	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_High_Intensity\Drums_High_Intensity		
+	576297046	Default_Low	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Mid		
+	702661786	Highest	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Mid		
+	783678539	Higher	Intensity	\Actor-Mixer Hierarchy\Default Work Unit\Fire_Low		
+	827099451	Higher	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_High_Intensity\Drums_High_Intensity		
+	971148161	Higher	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Low_Intensity\Drums_Low_Intensity		
+	996490183	Highest	Intensity	\Interactive Music Hierarchy\Default Work Unit\Drums_Mid_Intensity\Drums_Mid_Intensity		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	46158326	Drums_Mid_Intensity	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drums_Mid_Intensity_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drums_Mid_Intensity\Drums_Mid_Intensity\Drums_Mid_Intensity		622122
+	94716580	Failure_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Failure_3_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\Failure_3		110490
+	115549773	Flute_Note1_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note1_3_30D3DEF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_1\Flute_Note1_3		36238
+	130815401	Flute_Note1_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note1_1_D0D8522E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_1\Flute_Note1_1		36379
+	135249463	Drone_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drone_3_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drone\Drone_3\Drone_3		259159
+	151574003	Flute_Note3_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note3_2_6FF7DD71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_3\Flute_Note3_2		35864
+	165392718	Flute_Note2_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note2_3_40B5F3E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_2\Flute_Note2_3		37387
+	243572748	Success_4	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Success_4_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_4		117222
+	248209667	Star_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Star_3_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_3		75498
+	301958482	Flute_Note2_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note2_1_D6CDEFF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_2\Flute_Note2_1		36504
+	307005689	Fire_High	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Fire_01_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_High		96593
+	341472401	Failure_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Failure_1_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\Failure_1		108153
+	351464349	Success_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Success_2_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_2		121922
+	382785941	Flute_Note4_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note4_3_9423174D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_4\Flute_Note4_3		36769
+	434075218	Flute_Note4_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note4_2_C441FA5B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_4\Flute_Note4_2		36718
+	452332949	Drone_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drone_1_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drone\Drone_1\Drone_1		262716
+	467030876	Fire_Low	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Fire_03_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_Low		81846
+	506631507	Drone_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drone_2_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drone\Drone_2\Drone_2		289994
+	539867110	Success_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Success_1_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_1		117076
+	569625683	Flute_Note3_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note3_1_D3FB9331.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_3\Flute_Note3_1		36065
+	587291268	Failure_4	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Failure_4_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\Failure_4		114187
+	642091844	Failure_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Failure_2_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failure\Failure_2		115451
+	645040796	Flute_Note1_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note1_2_A29F621E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_1\Flute_Note1_2		33502
+	782753784	Flute_Note2_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note2_2_CC5ED5C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_2\Flute_Note2_2		35582
+	817522619	Success_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Success_3_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success\Success_3		115379
+	830805131	Star_2	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Star_2_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_2		69471
+	847706005	Star_4	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Star_4_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_4		76463
+	867287718	Fire_Mid	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Fire_02_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire_Mid		90400
+	885964399	Flute_Note4_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note4_1_C83CF79B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_4\Flute_Note4_1		36668
+	904440547	Drums_Low_Intensity	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drums_Low_Intensity_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drums_Low_Intensity\Drums_Low_Intensity\Drums_Low_Intensity		604957
+	910152102	Drone_4	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drone_4_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drone\Drone_4\Drone_4		260956
+	931909280	Drums_High_Intensity	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Drums_High_Intensity_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\Drums_High_Intensity\Drums_High_Intensity\Drums_High_Intensity		630613
+	972902691	Flute_Note3_3	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Flute_Note3_3_6C9CEA31.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flute_Note_3\Flute_Note3_3		37477
+	1028983836	Star_1	C:\Users\seth\Desktop\Ritual_Wwise\.cache\Mac\SFX\Star_1_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Star_1		75628
+
