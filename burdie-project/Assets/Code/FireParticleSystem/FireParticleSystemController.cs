@@ -9,17 +9,18 @@ public class FireParticleSystemController : MonoBehaviour {
     [SerializeField]
     private Vector3 _driftModifier = Vector3.zero;
     private ParticleSystem _particleSystem;
+    private ParticleSystem.Particle[] _particles;
 
     private void Awake() {
+        this._particles = new ParticleSystem.Particle[1000];
         this._particleSystem = this.GetComponent<ParticleSystem>();
     }
 
     private void Update() {
         Vector3 position = this.transform.position;
-        ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1000];
-        int particleCount = this._particleSystem.GetParticles(particles);
+        int particleCount = this._particleSystem.GetParticles(_particles);
         for (int i = 0; i < particleCount; i++) {
-            ParticleSystem.Particle particle = particles[i];
+            ParticleSystem.Particle particle = _particles[i];
 
             Vector3 inwardDrift = this._inwardDriftFactor * (transform.position - particle.position);
             // NOTE (darren): assume that the particle system is facing upwards
@@ -27,9 +28,9 @@ public class FireParticleSystemController : MonoBehaviour {
 
             particle.velocity += inwardDrift;
 
-            particles[i] = particle;
+            _particles[i] = particle;
         }
 
-        this._particleSystem.SetParticles(particles, particleCount);
+        this._particleSystem.SetParticles(_particles, particleCount);
     }
 }
