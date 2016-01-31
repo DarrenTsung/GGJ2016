@@ -18,10 +18,10 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
         this.StopAllCoroutines();
         if (state == OnOffState.ON) {
             this._meshRenderer.enabled = true;
-            // this.StartCoroutine(this.AnimateEmissiveColor(0.2f, 0.8f, 0.6f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.2f, 0.8f, 0.6f));
         } else {
             this._meshRenderer.enabled = false;
-            // this.StartCoroutine(this.AnimateEmissiveColor(0.8f, 0.2f, 0.6f));
+            this.StartCoroutine(this.AnimateEmissiveColor(0.8f, 0.2f, 0.6f));
         }
     }
 
@@ -30,8 +30,8 @@ public class EmissiveMaterialStateListener : MonoBehaviour {
 			float currentAlpha = Easers.Ease(EaseType.QuadOut, startAlpha, endAlpha, time, duration);
             // this._meshRenderer.sharedMaterial.EnableKeyword ("_EMISSION");
             // this._meshRenderer.sharedMaterial.SetColor("_EmissionColor", new Color(1.0f, 1.0f, 1.0f, currentAlpha));
-            // DynamicGI.SetEmissive(this._meshRenderer, new Color(currentAlpha, currentAlpha, currentAlpha, currentAlpha));
-            // Debug.Log("currentAlpha: " + currentAlpha);
+            DynamicGI.SetEmissive(this._meshRenderer, new Color(currentAlpha, currentAlpha, currentAlpha, currentAlpha));
+            Debug.Log("currentAlpha: " + currentAlpha);
 
 			yield return new WaitForEndOfFrame();
 		}

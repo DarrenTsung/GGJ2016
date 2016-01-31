@@ -8,9 +8,13 @@ public enum Intensity {
     HIGH = 2
 }
 
+public class IntensityEvent : UnityEvent<Intensity> {}
+
+[CustomExtensionInspectorAttribute]
 public class GameManager : Singleton<GameManager> {
     // PRAGMA MARK - Public Interface
     public static UnityEvent OnGameEnd = new UnityEvent();
+    public static IntensityEvent OnIntensityChange = new IntensityEvent();
 
     public bool IsGameFinished() {
         return this._triesLeft < 0;
@@ -24,6 +28,7 @@ public class GameManager : Singleton<GameManager> {
         }
         private set {
             this._intensity = value;
+            GameManager.OnIntensityChange.Invoke(this._intensity);
         }
     }
 
@@ -39,6 +44,16 @@ public class GameManager : Singleton<GameManager> {
         InputSequenceValidator.OnFailureValidate.AddListener(this.HandleFailedValidation);
     }
 
+    [MakeButton]
+    private void DecreaseIntensity() {
+        if (this.CurrentIntensity == Intensity.LOW) {
+            return;
+        }
+
+        this.CurrentIntensity = (Intensity)(((int)this.CurrentIntensity) - 1);
+    }
+
+    [MakeButton]
     private void IncreaseIntensity() {
         if (this.CurrentIntensity == Intensity.HIGH) {
             return;

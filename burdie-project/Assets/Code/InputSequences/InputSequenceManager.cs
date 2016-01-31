@@ -39,12 +39,15 @@ public class InputSequenceManager : Singleton<InputSequenceManager> {
         InputSequenceValidator.OnSuccessValidate.AddListener(this.HandleSuccessfulValidation);
         InputSequenceValidator.OnFailureValidate.AddListener(this.HandleFailedValidation);
         InputSequencePlayer.OnStopPlay.AddListener(this.ValidateCurrentInputSequence);
+    }
 
+    private void Start() {
         Toolbox.GetInstance<InputListenerManager>().ListenForType(InputControlType.Command, (InputDevice device) => {
             this._tutorialListener.Disabled = true;
             this.ResetAndStartPlayingSequences();
         });
     }
+
 
     private void HandleSuccessfulValidation() {
         this._currentIndex++;
