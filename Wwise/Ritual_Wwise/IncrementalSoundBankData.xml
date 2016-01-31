@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="4" Flags="601859981">
+	<Platform GUID="{7F4E5145-4292-4A2B-8557-F1DD685A3790}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="97401089" StreamHash="157587662" Timestamp="130986782819763702"/>
+			<Bank Name="Ritual_Soundbank" Hash="2926923124" StreamHash="157587662" Timestamp="130986782819663608"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{87BBF3E6-0A98-44E7-B4D9-103EF4EF8FCF}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2446687094" StreamHash="157587662" Timestamp="130986670541544943"/>
+			<Bank Name="Ritual_Soundbank" Hash="2714841167" StreamHash="157587662" Timestamp="130986670541424831"/>
+		</Language>
+	</Platform>
+</IncrementalBankBuild>
