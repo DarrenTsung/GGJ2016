@@ -8,6 +8,7 @@ using InControl;
 
 public class InputControlTypeEvent : UnityEvent<InputControlType> { }
 
+[CustomExtensionInspector]
 public class InputSequenceValidator : MonoBehaviour {
     // PRAGMA MARK - Public Interface
     public static UnityEvent OnStartValidate = new UnityEvent();
@@ -62,6 +63,7 @@ public class InputSequenceValidator : MonoBehaviour {
             InputControlType[] typesPressed = this.AllInputControlTypesPressedThisFrame();
             if (typesPressed.Length > 0) {
                 InputSequenceValidator.OnKeyPressed.Invoke(typesPressed[0]);
+                AkSoundEngine.PostEvent(GameConstants.Instance.EventNameForFluteKey(typesPressed[0]), this.gameObject);
                 // if the valid control type was found, then we succeed
                 if (Array.Exists(typesPressed, t => t == this._validControlType)) {
                     this.HandleSuccessfulInput();
@@ -86,14 +88,18 @@ public class InputSequenceValidator : MonoBehaviour {
         }
     }
 
+    [MakeButton]
     private void HandleValidationSuccess() {
         this._validating = false;
         InputSequenceValidator.OnSuccessValidate.Invoke();
+        AkSoundEngine.PostEvent("Play_Success", this.gameObject);
     }
 
+    [MakeButton]
     private void HandleValidationFailure() {
         this._validating = false;
         InputSequenceValidator.OnFailureValidate.Invoke();
+        AkSoundEngine.PostEvent("Play_Failure", this.gameObject);
     }
 
 

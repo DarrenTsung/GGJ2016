@@ -51,6 +51,7 @@ public class GameManager : Singleton<GameManager> {
         }
 
         this.CurrentIntensity = (Intensity)(((int)this.CurrentIntensity) - 1);
+        this.RefreshSoundIntensity();
     }
 
     [MakeButton]
@@ -60,10 +61,41 @@ public class GameManager : Singleton<GameManager> {
         }
 
         this.CurrentIntensity = (Intensity)(((int)this.CurrentIntensity) + 1);
+        this.RefreshSoundIntensity();
+    }
+
+    private void RefreshSoundIntensity() {
+        switch (this.CurrentIntensity) {
+            case Intensity.LOW:
+            default:
+                AkSoundEngine.SetState("Intensity", "Default_Low");
+                break;
+            case Intensity.MEDIUM:
+                AkSoundEngine.SetState("Intensity", "Higher");
+                break;
+            case Intensity.HIGH:
+                AkSoundEngine.SetState("Intensity", "Highest");
+                break;
+        }
     }
 
     private void HandleSuccessfulValidation() {
         this._numberOfCompletedSequences++;
+
+        if (this._numberOfCompletedSequences == 2) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.4f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.8f;
+        }
+
+        if (this._numberOfCompletedSequences == 4) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.6f;
+        }
+
+        if (this._numberOfCompletedSequences == 6) {
+            GameConstants.Instance.kPlayNextKeyFrameMinDelay = 0.1f;
+            GameConstants.Instance.kPlayNextKeyFrameMaxDelay = 0.3f;
+        }
     }
 
     private void HandleFailedValidation() {
