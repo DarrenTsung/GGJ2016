@@ -12,6 +12,6 @@ public class DrumBehavior : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		animator.speed = 0.8f;
+		// animator.speed = 0.8f;
 	}
 }

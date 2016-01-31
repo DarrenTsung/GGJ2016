@@ -246,7 +246,11 @@ MonoBehaviour:
         ObjectType: 7
       ID: 216529182
       Guid: 6416b1f565948549b6aa301609e7c1f9
-  ExpandedItems: []
+  ExpandedItems:
+  - /Ritual_Wwise
+  - /Ritual_Wwise/States
+  - /Ritual_Wwise/States/Default Work Unit
+  - /Ritual_Wwise/States/Default Work Unit/Intensity
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
